@@ -1,0 +1,48 @@
+@keyframes slideIn {
+    from     {  opacity: 0; transform: translateY(30px); }
+    to         {  opacity: 1; transform: translateY(0); }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+}
+.modal::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  opacity: 0.3;
+}
+.modal .main {
+  position: relative;
+  z-index: 11;
+  background: #fff;
+  width: 70%;
+  max-width: 70%;
+  box-shadow: 0 8px 24px 6px rgba(0,0,0,0.12);
+  margin-top: 36vh;
+  padding: 24px 24px 16px 24px;
+  animation: slideIn 0.2s ease;
+  animation-fill-mode: forwards;
+}
+.modal .main .title {
+  color: #000;
+  height: 40px;
+  font-size: 16px;
+}
+.modal .main .content input{
+  width: 180px;
+}
+.modal .main .footer {
+  text-align: right;
+  margin-top: 24px;
+}

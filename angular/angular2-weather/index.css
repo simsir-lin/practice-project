@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'iconfont';  /* project id："168604" */
+  src: url('http://at.alicdn.com/t/font_t8g096hw738oajor.eot');
+  src: url('http://at.alicdn.com/t/font_t8g096hw738oajor.eot') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_t8g096hw738oajor.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_t8g096hw738oajor.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_t8g096hw738oajor.svg#iconfont') format('svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: rgba(0,0,0,.30) 0px 2px 5px;
+  border-radius: 2px;
+  background: #fff;
+  transition: all 0.3s;
+}
+.box:hover {
+  box-shadow: 0 8px 8px rgba(0,0,0,0.12),0 0 8px rgba(0,0,0,0.12);
+}
+
+.input label {
+  display: block;
+  color: #9E9E9E;
+  font-size: 12px;
+}
+.input input {
+  border: none;
+  outline:none;
+  border-bottom: 2px solid #9E9E9E;
+  padding: 5px 0;
+}
+.input input:focus {
+  border-bottom: 2px solid #9C27B0;
+}
+
+.btn {
+  border: none;
+  outline:none;
+  background: none;
+  height: 36px;
+  width: 88px;
+  max-width: 88px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 2px;
+  transition: all 0.3s;
+  color: #9C27B0;
+}
+.btn-link:active {
+  background: #DCDCDC;
+}
+.btn:disabled {
+  color: #9E9E9E;
+}
+
+.iconfont {
+  font-family: "iconfont";
+  font-size: 16px;
+  font-style: normal;
+}
+.iconfont-lg {
+  font-family: "iconfont";
+  font-size: 32px;
+  font-style: normal;
+  color: #616161;
+}
+
+body {
+  background: #f1f1f1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*.btn {
+  box-shadow: 0 2px 5px 0 #bbb;
+  border: none;
+  padding: 10px 35px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 8px 8px rgba(0,0,0,0.12),0 0 8px rgba(0,0,0,0.12);
+}*/

@@ -1,0 +1,45 @@
+<div class="app">
+  <div class="box weather" *ngIf="regions.length" [@weather]="weatherState">
+    <div class="title" [ngStyle]="style">
+      <a class="close" href="#"><i class="iconfont">&#xe607;</i></a>
+      <p class="word">{{ now.tmp }}°<span><i class="iconfont">&#xe604;</i>&nbsp;{{ now.region }}</span></p>
+    </div>
+    <div class="forecast">
+      <ul>
+        <li *ngFor="let daily of dailys">
+          <p [innerHTML]="daily.icon"></p>
+          <p class="txt">{{ daily.txt }}<br>({{ daily.maxmin }})</p>
+          <p>{{ daily.date }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="now">
+      <div class="item hum">
+        <p><i class="iconfont">&#xe601;</i></p>
+        <p>{{ now.hum }} %</p>
+      </div>
+      <div class="item pop">
+        <p><i class="iconfont">&#xe624;</i></p>
+        <p>{{ now.pop }} %</p>
+      </div>
+      <div class="item wind">
+        <p><i class="iconfont">&#xe707;</i></p>
+        <p>{{ now.wind }}级</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rounds">
+    <ul>
+      <li *ngFor="let region of regions;"
+        class="round" [ngClass]="{'active': now.region === region}"
+        (click)="changeRegion(region)" ></li>
+    </ul>
+  </div>
+
+  <div class="action" (click)="showModal()">
+    <i class="iconfont">&#xe622;</i>
+  </div>
+
+  <modal *ngIf="isShowModal" (close)="addRegion($event)"></modal>
+</div>

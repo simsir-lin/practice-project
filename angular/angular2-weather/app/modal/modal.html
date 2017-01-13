@@ -1,0 +1,17 @@
+<div class="modal">
+  <div class="box main">
+    <div class="title">
+      <span>添加城市</span>
+    </div>
+    <div class="content">
+      <div class="input">
+        <label>城市名称</label>
+        <input [(ngModel)]="city" name="name" (keyup)="onChange($event)" />
+      </div>
+    </div>
+    <div class="footer">
+      <button class="btn btn-link" (click)="onOk()" [disabled]="!isValidate">确定</button>
+      <button class="btn btn-link" (click)="onClose()">取消</button>
+    </div>
+  </div>
+</div>

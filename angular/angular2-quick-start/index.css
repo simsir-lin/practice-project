@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image:url('assets/images/bg.png');
+}
+
+.nav {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}

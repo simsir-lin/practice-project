@@ -1,0 +1,129 @@
+/*
+ * 1200px <= lg
+ * 992px <= md < 1200px
+ * 768px <= sm < 992px
+ * xs < 768px
+*/
+
+@media (min-width: 1200px) {
+}
+
+.weather {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+.title .word {
+  position: relative;
+  font-weight: bold;
+  text-shadow: rgba(0,0,0,.30) 0px 1px 5px;
+  padding-left: 25px;
+  font-size: 46px;
+  top: 38vh;
+}
+.title .word span {
+  font-size: 18px;
+}
+.title .close {
+  float: right;
+  margin-right: 10px;
+  margin-top: 8px;
+  color: #fff;
+  transition: all 0.3s;
+}
+.title .close i{
+  font-size: 20px;
+}
+.title .close:hover {
+  text-shadow: rgba(0,0,0,.10) 0px 1px 5px;
+}
+
+.now {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.now .item {
+  width: 33%;
+  text-align: center;
+  padding: 8px 0px;
+  color: #666;
+  font-size: 14px;
+}
+.now .item p {
+  margin-top: 1px;
+}
+.now .item .iconfont {
+  font-size: 26px;
+}
+.now .pop {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.forecast {
+  height: 130px;
+}
+.forecast ul {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.forecast ul li {
+  float: left;
+  width: 20%;
+  height: 100px;
+  text-align: center;
+  padding-top: 10px;
+}
+.forecast ul li p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.rounds ul{
+  list-style: none;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.round {
+  display: block;
+  margin: 0px 3px;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: #bdbdbd;
+}
+.round.active {
+  background: #757575;
+}
+
+.action {
+  position: fixed;
+  bottom: 30px;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  background: #FFC107;
+  box-shadow: rgba(0,0,0,.30) 0px 2px 5px;
+  border-radius: 25px;
+  transition: all 1s;
+  text-align: center;
+  line-height: 50px;
+}
+.action:active {
+  cursor: pointer;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.12),0 0 8px rgba(0,0,0,0.12);
+}
+.action i {
+  font-size: 18px;
+  color: #fff;
+}
