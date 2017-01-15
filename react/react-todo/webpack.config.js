@@ -15,25 +15,20 @@ module.exports = {
     filename: 'app.js'  // 打包后的文件名称
   },
 
-  devServer: {
-    inline: true
-  },
-
   module: {
     loaders: [
       {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass'],  // 处理顺序从右至左
-        include: PATH.ROOT  // 在哪个路径下找文件，绝对路径
-      },
-      {
-        test: /\.jsx$/,
+        test: /\.jsx?$/,
         loader: 'babel',
-        include: PATH.APP,
+        exclude: /node_modules/,
         query: {
           //添加两个presents 使用这两种presets处理js或者jsx文件
           presets: ['es2015', 'react']
         }
+      },
+      {
+        test: /\.scss?$/,
+        loaders: ['style', 'css', 'sass']  // 处理顺序从右至左
       }
     ]
   },
