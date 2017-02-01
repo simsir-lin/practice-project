@@ -6,5 +6,8 @@ angular/angular2-weather/node_modules/
 angular/angular2-weather/typescript-build/
 angular/angular2-weather/typings/
 
-react/react-todo/node_modules/
-react/react-todo/build/
+react/github-user-search/node_modules/
+react/github-user-search/build/
+
+react/account-mark/node_modules/
+react/account-mark/build/
